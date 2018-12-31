@@ -1,0 +1,22 @@
+Conways's Game of Life
+Rules found here: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+The program is designed to run in two possible modes: interactive and batch. 
+The mode chosen will be determined by how the program is run:
+
+1) interactive mode: this mode will be triggered when the program is executed with no command line arguments
+Initially, the program should set up a completely blank board; it should then ask the user for input:
+
+If the user enters:
+
+a : ask for coordinates where to add a new live cell (no action needed if cell is already alive).
+r : ask for coordinates where a cell should be removed (no action needed if cell is already dead).
+n : advance the simulation to the next iteration by applying the rules of the game.
+q : quit the program.
+p : play the game continuously (forever, without asking for more input; you can press control-C to stop the program).
+
+2) batch mode: this mode will be triggered if the executable is followed by a data file.
+The data file will consist of a sequence of commands (see above) followed by a "p". Lines starting with an "a" or an "r" will be followed by two numbers (representing a cell's location). A typical data file (scene) will mostly have "a" lines, ending with a "p" line. 
+In this batch mode, the program will play the scene continuously. 
+You may assume that all data files will have a "p" as the last line; iow, that all scene files are always valid and correct.
+
+The scenes in the Life directory contain some interesting patterns as examples and can be run using batch mode
